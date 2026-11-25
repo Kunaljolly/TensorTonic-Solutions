@@ -4,6 +4,6 @@ def create_filled_array(shape: list, kind: str) -> np.ndarray:
     """
     Returns a 2D float64 array of zeros or ones with the requested shape.
     """
-    if kind == "zeros":
-        return np.zeros((shape[0],shape[-1]), dtype = "float64")
-    return np.ones((shape[0],shape[-1]), dtype = "float64")
+    if kind == 'zeros':
+        return np.zeros(shape, dtype=np.float64)
+    return np.ones(shape, dtype=np.float64)
